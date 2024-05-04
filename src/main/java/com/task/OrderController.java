@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 	@Autowired
 	OrderService os;
-	@PostMapping("/saveAll")
+	@PostMapping("/saveAllValue")
 	public String saveAll(@RequestBody List<OrderEntity> o) {
 		return os.saveAll(o);
 	}
